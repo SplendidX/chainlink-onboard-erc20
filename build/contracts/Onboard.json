@@ -1,0 +1,385 @@
+{
+  "contractName": "Onboard",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405160208060c183398101806040526020811015602d57600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050603580608c6000396000f3fe6080604052600080fdfea165627a7a7230582086da5d538a50886c2cec52958ae6e65b5e4a5085c76b2fbb9e8f7525d78ff7570029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582086da5d538a50886c2cec52958ae6e65b5e4a5085c76b2fbb9e8f7525d78ff7570029",
+  "sourceMap": "25:131:1:-;;;78:76;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:76:1;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;78:76:1;;;;;;;;;;;;;;;;141:6;124:14;;:23;;;;;;;;;;;;;;;;;;78:76;25:131;;;;;;",
+  "deployedSourceMap": "25:131:1:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Onboard {\n\n    address onboardedToken;\n\n    constructor (address _token) public {\n        onboardedToken = _token;\n    }\n}",
+  "sourcePath": "/home/splen/Dev/Solidity/chainlink-onboard-erc20/contracts/Onboard.sol",
+  "ast": {
+    "absolutePath": "/home/splen/Dev/Solidity/chainlink-onboard-erc20/contracts/Onboard.sol",
+    "exportedSymbols": {
+      "Onboard": [
+        71
+      ]
+    },
+    "id": 72,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 71,
+        "linearizedBaseContracts": [
+          71
+        ],
+        "name": "Onboard",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "onboardedToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 71,
+            "src": "49:22:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 69,
+              "nodeType": "Block",
+              "src": "114:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 65,
+                      "name": "onboardedToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "124:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 66,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "141:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "124:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 68,
+                  "nodeType": "ExpressionStatement",
+                  "src": "124:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 70,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 70,
+                  "src": "91:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:16:1"
+            },
+            "returnParameters": {
+              "id": 64,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:0:1"
+            },
+            "scope": 71,
+            "src": "78:76:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 72,
+        "src": "25:131:1"
+      }
+    ],
+    "src": "0:156:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/splen/Dev/Solidity/chainlink-onboard-erc20/contracts/Onboard.sol",
+    "exportedSymbols": {
+      "Onboard": [
+        71
+      ]
+    },
+    "id": 72,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 71,
+        "linearizedBaseContracts": [
+          71
+        ],
+        "name": "Onboard",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "onboardedToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 71,
+            "src": "49:22:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 69,
+              "nodeType": "Block",
+              "src": "114:40:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 65,
+                      "name": "onboardedToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 60,
+                      "src": "124:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 66,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 62,
+                      "src": "141:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "124:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 68,
+                  "nodeType": "ExpressionStatement",
+                  "src": "124:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 70,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 70,
+                  "src": "91:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:16:1"
+            },
+            "returnParameters": {
+              "id": 64,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:0:1"
+            },
+            "scope": 71,
+            "src": "78:76:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 72,
+        "src": "25:131:1"
+      }
+    ],
+    "src": "0:156:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2020-02-10T13:57:11.026Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
